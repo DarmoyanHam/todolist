@@ -38,14 +38,6 @@ function TodoList() {
         setTodos((prev) => prev.filter((todo) => todo.id !== id));
     };
 
-    // const handleEdit = (id, value) => {
-    //     setTodos((prev) => prev.map((todo) => {
-    //         if(id === todo.id) {
-    //             todo.title = value;
-    //         }
-    //     }));
-    // };
-
     const handleEdit = (id, value) => {
         if (!value.trim()) return;
         setTodos((prev) =>
