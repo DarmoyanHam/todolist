@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { STORAGE_KEY } from "../consts/storageKey";
 import { storageService } from "../services/storageService";
 import { Todo } from "./todo";
+import './../App.css'
 
 function TodoList() {
     const [todos, setTodos] = useState(storageService.loadFromStorage(STORAGE_KEY));
